@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "package-push": "REPO_URL=\"git@github.com:theodo/pepiniere-mypm2.git\"; ssh tnusadm@sg-m4 \"package-and-push --rpm-name=mypm2 --repository=$REPO_URL --version=1.0.0\"",
+    "package": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
