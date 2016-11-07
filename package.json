@@ -1,0 +1,15 @@
+{
+  "name": "mypm2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "package-push": "REPO_URL=\"git@github.com:theodo/pepiniere-mypm2.git\"; ssh tnusadm@sg-m4 \"package-and-push --rpm-name=mypm2 --repository=$REPO_URL --version=1.0.0\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "pm2": "2.0.19"
+  },
+  "author": "",
+  "license": "ISC"
+}
