@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "package-push": "REPO_URL=\"git@github.com:theodo/pepiniere-mypm2.git\"; ssh tnusadm@sg-m4 \"package-and-push --rpm-name=mypm2 --repository=$REPO_URL --version=1.0.0\"",
+    "package-push": "docker-compose exec package-push ./opt/app-packager/package-and-push.sh --rpm-name=mypm2 --repository=$(git remote get-url origin) --version=$npm_package_version",
     "package": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
