@@ -1,0 +1,7 @@
+version: '2'
+services:
+  package-push:
+    image: 'registry.pepinie.re:5000/docker-package-push:1.0.1'
+    volumes:
+      - '~/.ssh/id_rsa:/root/.ssh/id_rsa'
+    command: tail -f /dev/null
